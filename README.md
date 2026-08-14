@@ -119,7 +119,7 @@ requirements.txt
 Clone the repository
 
 ```bash
-git clone https://github.com/amol2600/apphub.git
+git clone https://github.com/rootsh-dev/apphub.git
 ```
 
 Go into the project

@@ -1,6 +1,6 @@
 asgiref==3.11.1
 certifi==2026.7.22
-Django==6.0.6
+Django==6.0.7
 djangorestframework==3.17.1
 gunicorn==26.0.0
 mysqlclient==2.2.8

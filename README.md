@@ -173,6 +173,8 @@ DB_PASSWORD=your_database_password
 DB_HOST=your_database_host
 DB_PORT=5432
 
+CUSTOM_DOMAIN=your domain
+
 BREVO_API_KEY=your_brevo_api_key
 BREVO_SENDER_EMAIL=your_verified_sender@example.com
 BREVO_SENDER_NAME=AppHub

@@ -33,11 +33,25 @@ ALLOWED_HOSTS = [
     "localhost",
 ]
 
+ALLOWED_HOSTS = [
+    "127.0.0.1",
+    "localhost",
+]
 
 render_hostname = os.getenv("RENDER_EXTERNAL_HOSTNAME")
+custom_domain = os.getenv("CUSTOM_DOMAIN")
 
 if render_hostname:
     ALLOWED_HOSTS.append(render_hostname)
+
+# ---------- Custom Domain ----------
+
+if custom_domain:
+    ALLOWED_HOSTS.append(custom_domain)
+
+# --------- END -------------------------
+
+# --------- CSRF Trusted Origins ----------
 
 CSRF_TRUSTED_ORIGINS = []
 
@@ -46,6 +60,14 @@ if render_hostname:
         f"https://{render_hostname}"
     )
 
+# ---------- Custom Domain CSRF Trusted Origins ---------- 
+
+if custom_domain:
+    CSRF_TRUSTED_ORIGINS.append(
+        f"https://{custom_domain}"
+    )
+
+# ---------- END -------------------------
 
 # Application definition
 

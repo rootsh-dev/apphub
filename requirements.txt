@@ -1,5 +1,5 @@
 asgiref==3.11.1
-certifi==2026.7.22
+certifi==2026.10.18
 Django==6.0.8
 djangorestframework==3.18.2
 gunicorn==26.0.0
